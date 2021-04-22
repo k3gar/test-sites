@@ -21,15 +21,16 @@ html{
 }
 .nav-bar-items {
     display: flex;
+    justify-content: center;
     width: 100%;
+    margin-left: -40px;
 }
 .nav-bar-list {
     display: flex;
     list-style: none;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 .nav-bar-item {
-    display: flex;
     font-size: 1.3rem;
     text-align: center;
     font-weight: bold;
