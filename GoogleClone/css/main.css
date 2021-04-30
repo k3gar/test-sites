@@ -116,7 +116,7 @@ main .main-buttoms button {
 }
 main .main-buttoms button:hover{
     border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px #000001;
+    box-shadow: 0 1px 1px #dadce0;
     color: #222
 }
 
