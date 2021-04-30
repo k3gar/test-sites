@@ -3,29 +3,72 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --pink-lavender: #CDB4DB;
+    --orchid-pinck: #FFC8DD;
+    --nadeshiko-pink: #FFAFCC;
+    --uranian-blue: #BDE0FE;
+    --baby-blue-eyes: #A2D2FF;
+}
 html{
+    font-size: 62.5%;
     font-family: 'Raleway', sans-serif;
 }
 .nav-bar {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-width: 320px;
-    height: 72px;
-    background-color: #FFC8DD;
-    display: block;
-/*     border: rgb(102, 10, 10) solid 0.5px; */
-    margin: auto;
+    height: 125px;
+    /* background-color: var(--orchid-pinck); */
+    background: linear-gradient(25.8deg, #CDB4DB 0.0005%, #FFC8DD 100%);
 }
-.nav-bar-logo-div {
-    display: inline-flex;
-}
-.nav-bar__logo{
+.nav-bar .nav-bar__logo {
     width: 150px;
-    min-width: 90px;
+    height: 66.5px;
 }
-.nav-bar-list {
-    display: flex;
+.nav-bar .nav-bar-list {
     list-style: none;
-    box-sizing: border-box; 
-    background-color: #FFC8DD;
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav-bar-items {
+    width: 100%;
+}
+.nav-bar .nav-bar-list .nav-bar-item {
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+.nav-bar .nav-bar-list .nav-bar-item:hover {
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main .first-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .first-section__img{
+    width: 320px;
+    height: 230px;
+    background-image:url('https://i.pinimg.com/originals/44/ab/f7/44abf7a845054f6561cfaeac724943c1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main .first-section h1 {
+    position: absolute;
+    align-content: center;
+    align-self: center;
+    color: ivory;
+    font-size: 2.5rem;
+    background-color: black;
 }
