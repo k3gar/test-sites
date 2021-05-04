@@ -21,13 +21,16 @@ html{
     align-items: center;
     width: 100%;
     min-width: 320px;
+    max-width: 767;
     height: 125px;
-    /* background-color: var(--orchid-pinck); */
-    background: linear-gradient(25.8deg, #CDB4DB 0.0005%, #FFC8DD 100%);
+    left: calc(50% - 360px/2);
+    top: calc(50% - 125px/2 - 1256px);
+    background: linear-gradient(83.56deg, #CDB4DB 12.75%, rgba(255, 255, 255, 0) 96.43%), #FFC8DD;
+    background-blend-mode: darken, normal;
 }
 .nav-bar .nav-bar__logo {
     width: 150px;
-    height: 66.5px;
+    height: 67px;
 }
 .nav-bar .nav-bar-list {
     list-style: none;
@@ -38,11 +41,13 @@ html{
     width: 100%;
 }
 .nav-bar .nav-bar-list .nav-bar-item {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 20px;
-    font-weight: 400;
+    font-weight: 500;
     width: 100%;
     text-align: center;
+    font-style: normal;
+    align: center;
 }
 .nav-bar .nav-bar-list .nav-bar-item:hover {
     font-size: 1.2rem;
@@ -58,17 +63,187 @@ main .first-section {
 }
 
 main .first-section__img{
-    width: 320px;
-    height: 230px;
-    background-image:url('https://i.pinimg.com/originals/44/ab/f7/44abf7a845054f6561cfaeac724943c1.jpg');
+    width: 100%;
+    max-width: 766px;
+    height: 536px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
+    background-position: center;
+    background-image: linear-gradient(331.14deg, rgba(0, 0, 0, 0) 5.2%, #040404 121.06%), url('./images/friends.jpg');
 }
+
 main .first-section h1 {
     position: absolute;
-    align-content: center;
-    align-self: center;
-    color: ivory;
-    font-size: 2.5rem;
-    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 160px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+main .second-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .second-section .second-section__img {
+    width: 100%;
+    max-width: 766px;
+    height: 536px;
+    background-image: url('./images/couple_1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+main .second-section .second-section__p-1{
+    width: 100%;
+    position: absolute;
+    font-size: 3rem;
+    line-height: 35px;
+    font-weight: 400;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.59);
+}
+main .second-section .second-section__p-2{
+    width: 100%;
+    position: absolute;
+    font-size: 1.9rem;
+    line-height: 26px;
+    font-weight: 400;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 155px;
+    padding: 50px;
+    color: #FFFFFF;
+}
+main .second-section .shop-buttom{
+    background-color: var(--nadeshiko-pink);
+    width: 240px;
+    height: 55px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 390px;
+    border-radius: 54px;
+}
+main .second-section .shop-buttom p{
+    text-align: center;
+    align-items: center;
+    padding: 13px;
+    font-size: 2.4rem;
+    color: #000000;
+    line-height: 28px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.59);
+}
+main .third-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .third-section .third-section__img {
+    width: 100%;
+    max-width: 766px;
+    height: 536px;
+    background-image: url('./images/guy.jfif');
+    background-position: center;
+    background-size: cover;
+}
+main .third-section .third-section__p{
+    position: absolute;
+    font-size: 3rem;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px #000000;
+    margin-top: 115px;
+    padding: 20px;
+}
+main .third-section .catalog-buttom{
+    background-color: var(--baby-blue-eyes);
+    width: 240px;
+    height: 55px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 390px;
+    border-radius: 54px;
+}
+main .third-section .catalog-buttom p{
+    text-align: center;
+    align-items: center;
+    padding: 13px;
+    font-size: 2.4rem;
+    color: #000000;
+    line-height: 28px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.59);
+}
+main .fourth-section {
+    width: 100%;
+    height: 566px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .fourth-section .fourth-section__img {
+    width: 100%;
+    height: 566px;
+    background-image: url('./images/girl.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .fourth-section .fourth-section--box{
+    position: absolute;
+    background: linear-gradient(68.17deg, #000000 -81.07%, rgba(194, 194, 194, 0) 19.59%, rgba(255, 255, 255, 0) 131.31%), rgba(102, 82, 82, 0.19);
+    width: 265px;
+    height: 205px;
+    margin-top: 230px;
+}
+main .fourth-section .fourth-section--box p {
+    font-size: 3rem;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px #000000;
+}
+main .fourth-section .fourth-section--box .contact-buttom{
+    background-color: var(--pink-lavender);
+    width: 240px;
+    height: 55px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 25px;
+    border-radius: 54px;
+    padding: 10px;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 88px;
+    background: linear-gradient(267.32deg, #CDB4DB 33.97%, rgba(255, 255, 255, 0) 171.1%), #FFC8DD;
+    display: flex;
+    align-items: center;
+}
+footer .social {
+    width: 20px;
+    height: 20px;
+    margin: 0 15px 0 10px;
+}
+footer .logo-footer{
+    width: 125px;
+    height: 65px;
 }
