@@ -47,7 +47,7 @@ html{
     width: 100%;
     text-align: center;
     font-style: normal;
-    align: center;
+    align-items: center;
 }
 .nav-bar .nav-bar-list .nav-bar-item:hover {
     font-size: 1.2rem;
