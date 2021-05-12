@@ -1,0 +1,94 @@
+head{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+:root{
+    /* Primary */
+    --very-dark-blue: hsl(233, 47%, 7%); /* (main background) */
+    --dark-desaturated-blue: hsl(244, 38%, 16%) ; /* (card background) */
+    --soft-violet: hsl(277, 64%, 61%); /* (accent) */
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%); /* (main heading, stats) */
+    --slightly-transparent-white-1:hsla(0, 0%, 100%, 0.75); /* (main paragraph) */
+    --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
+}
+main{
+    background-color: var(--very-dark-blue);
+    min-width: 375px;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: var(--dark-desaturated-blue);
+    width: 240px;
+    height: 95vh;
+    border-radius: 10px;
+}
+.card-img{
+    width: 100%;
+    height: 160px;
+    background-image: linear-gradient(
+        hsla(277, 100%, 38%, 40%), 
+        hsla(277, 100%, 38%, 40%)
+      ), url('../images/image-header-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px var(--dark-desaturated-blue);
+}
+.card .card--heading{
+    font-size: 1.3rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card .card--heading .accent {
+    color: var(--soft-violet);
+}
+.card .card--paragraph{
+    color: var(--slightly-transparent-white-1);
+    font-size: 0.74rem;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    line-height: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 70%;
+}
+.card .card--metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.card .card--metric p {
+    font-family: 'Inter';
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+}
+.card .card--metric span {
+    font-family: 'Lexend Deca';
+    font-size: 0.74rem;
+    font-weight:normal;
+    opacity: 70%;
+}
