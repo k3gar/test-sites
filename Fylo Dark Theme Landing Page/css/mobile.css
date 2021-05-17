@@ -1,0 +1,28 @@
+/* ### Primary */
+/* ### Accent */
+/* Fonts */
+/* ### Headings, Call-to-actions, Header Navigation */
+/* ### Body */
+/* ### Neutral */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #1c2431;
+  width: 100%;
+  height: 230px;
+}
+
+.logo {
+  background-image: "../images/logo.svg";
+  width: 60px;
+  height: 50px;
+}
+
+.navbar {
+  text-decoration: none;
+}

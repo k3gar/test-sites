@@ -1,0 +1,33 @@
+/* ### Primary */
+$DarkBlue_intro: hsl(217, 28%, 15%);
+$DarkBlue_main: hsl(218, 28%, 13%);
+$DarkBlue_footer: hsl(216, 53%, 9%);
+$DarkBlue_testimonials: hsl(219, 30%, 18%);
+
+/* ### Accent */
+$Cyan: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
+$LightRed: hsl(0, 100%, 63%);
+
+/* Fonts */
+$Fuente1: 'Raleway', sans-serif; /* ### Headings, Call-to-actions, Header Navigation */
+$Fuente2: 'Open Sans', sans-serif; /* ### Body */
+
+/* ### Neutral */
+
+$White: hsl(0, 0%, 100%);
+
+@mixin letra($fuente) {
+    @if $fuente==$Fuente1 {
+        font-family: 'Raleway', sans-serif;
+    }
+    @else {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }  
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
