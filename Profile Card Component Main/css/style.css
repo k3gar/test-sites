@@ -1,0 +1,75 @@
+:root {
+    /* Colors */
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    background-color: var(--dark-cyan);
+}
+.circle-top {
+    background-image: url('../images/bg-pattern-top.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -300px;
+    left: -330px;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    margin: 70px auto;
+}
+.card--banner {
+    background-image: url('../images/bg-pattern-card.svg');
+    width: 100%;
+    height: 135px;
+    background-position: center;
+    background-size:cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card--info__pic{
+    background-image: url('../images/image-victor.jpg');
+    background-position: center;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    border: 6px solid white;
+    border-radius: 50px;
+    position: relative;
+    top: -50px;
+    left: calc(50% - 43px);
+}
+.card--info {
+    background-color: white;
+    text-align: center;    
+}
+.card--info__name{
+    display: inline-flex;
+    padding: 15px 0 15px 0;
+}
+.card--info__states {
+    list-style: none;
+    background-color: white;
+    display: inline-flex;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 1px solid var(--dark-gray);
+}
