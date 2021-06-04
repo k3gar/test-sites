@@ -28,10 +28,22 @@ body {
     top: -300px;
     left: -330px;
 }
+.circle-bottom {
+    background-image: url('../images/bg-pattern-top.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: -200px;
+    right: -330px;
+}
 .card{
     width: 300px;
     height: 500px;
     margin: 70px auto;
+    padding: 10vh 0 0 0;
 }
 .card--banner {
     background-image: url('../images/bg-pattern-card.svg');
@@ -50,13 +62,15 @@ body {
     height: 90px;
     border: 6px solid white;
     border-radius: 50px;
-    position: relative;
+    position: absolute;
     top: -50px;
     left: calc(50% - 43px);
 }
 .card--info {
     background-color: white;
-    text-align: center;    
+    text-align: center;  
+    position: relative;
+    padding: 55px 0 25px 0;
 }
 .card--info__name{
     display: inline-flex;
@@ -65,11 +79,21 @@ body {
 .card--info__states {
     list-style: none;
     background-color: white;
-    display: inline-flex;
+    display: flex;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top: 1px solid var(--dark-gray);
+    font-weight: 700;
+    justify-content: space-evenly;
+}
+.card--info__states .texto {
+    font-weight: 400;
+    font-size: 12px;
+}
+.card--info__states .texto--item {
+    display: flex;
+    flex-direction: column;
 }
