@@ -92,28 +92,52 @@ main {
     font-size: 12px;
     text-decoration: none;
 }
+.circle-top {
+    background-image: url('../images/bg-pattern-top.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: -300px;
+    left: -330px;
+    z-index: -1;
+}
+.circle-bottom {
+    background-image: url('../images/bg-pattern-top.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: -20vh;
+    right: -40vw;
+    z-index: -1;
+}
 @media (min-width: 768px) {
     .circle-top {
         background-image: url('../images/bg-pattern-top.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 500px;
-        height: 500px;
+        width: 700px;
+        height: 700px;
         position: absolute;
-        top: -300px;
-        left: -330px;
+        top: -350px;
+        left: -150px;
     }
     .circle-bottom {
         background-image: url('../images/bg-pattern-top.svg');
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        width: 400px;
-        height: 400px;
+        width: 700px;
+        height: 700px;
         position: absolute;
-        bottom: -10vh;
-        right: 0vw;
+        bottom: -350px;
+        right: -65px;
     }
 
 }
