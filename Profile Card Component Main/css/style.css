@@ -16,6 +16,7 @@
 }
 body {
     background-color: var(--dark-cyan);
+    overflow: hidden;
 }
 main {
     display: flex;
