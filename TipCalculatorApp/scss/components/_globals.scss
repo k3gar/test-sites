@@ -1,0 +1,52 @@
+//Variables
+
+$GlobalFont: 'Space Mono';
+$FontSize: 24px;
+//Colors
+//-Primary
+$StrongCyan:hsl(172, 67%, 45%);
+//Neutral
+$VeryDarkCyan:hsl(183, 100%, 15%);
+$DarkGrayishCyan1: hsl(186, 14%, 43%);
+$DarkGrayishCyan2: hsl(184, 14%, 56%);
+$LightGrayishCyan1: hsl(185, 41%, 84%);
+$LightGrayishCyan2: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+//Global Changes
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: $GlobalFont;
+    font-size: $FontSize;
+}
+
+body {
+    background-color: $LightGrayishCyan1;
+    h1{
+        text-align: center;
+        margin: 15px 0;
+        color: rgba($color: #000000, $alpha: 0.6);
+    }
+}
+.Calc {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    .Calc__tip div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        //flex-direction: column;
+        
+    }
+}
+.Calc__tip > div > button, .Calc__tip--tip-input {
+    margin: 5px;
+    padding: 6%;
+    font-weight: bold;
+    color: $White;
+    background-color: $VeryDarkCyan;
+}

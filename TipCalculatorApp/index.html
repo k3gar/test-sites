@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./css/index.css">
+
+	<title>Frontend Mentor | Tip calculator app</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution { font-size: 11px; text-align: center; }
+		.attribution a { color: hsl(228, 45%, 44%); }
+	</style>
+</head>
+<body>
+	<h1>SPLIT<br>TTER</h1>
+	<main>
+		<form action="" class="Calc">
+			<section class="Calc__bill">
+				<label for="bill">Bill</label>
+				<input id="bill" type="number">
+			</section>
+			<section class="Calc__tip">
+				<label for="">Select Tip %</label>
+				<div>
+					<button type="button">5%</button>
+					<button type="button">10%</button>
+					<button type="button">15%</button>
+					<button type="button">25%</button>
+					<button type="button">50%</button>
+					<input class="Calc__tip--tip-input" type="number" name="" id="" placeholder="Custom">
+				</div>
+			</section>
+			<section class="Calc__people">
+				<label for="people">Number of People</label>
+				<input id="people" type="number">
+			</section>
+			<section class="Calc__result">
+				<div class="Calc__result--amount">
+					<p>Tip Amount <br> 	/ person </p>
+				</div>
+				<div class="Calc__result--total">
+					<p>Total<br> 	/ person </p>
+				</div>
+				<button type="button">RESET</button>
+			</section>
+
+		</form>
+	</main>
+
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="https://github.com/k3gar/">Kevin Garcia</a>.
+	</div>
+	</body>
+</html>
