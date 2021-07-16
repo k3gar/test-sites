@@ -21,12 +21,6 @@ body {
     padding: 20px;
     border-radius: 20px;
     margin: 5px;
-/*     .Calc__tip div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-           
-    } */
 }
 .Calc__tip--column{
     display: flex;
@@ -43,7 +37,7 @@ body {
     flex-direction: column;
 }
 
-.Calc__tip--left-column > button, .Calc__tip--right-column > button, .Calc__tip--tip-input {
+.Calc__tip--left-column > button, .Calc__tip--right-column > button {
     margin: 5px;
     font-weight: bold;
     color: $White;
@@ -51,17 +45,32 @@ body {
     background-color: $VeryDarkCyan;
     min-width: 60px;
     height: 45px;
+    border-radius: 7px;
+    border:none;
+}
+.Calc__tip--tip-input{
+    margin: 5px;
+    color: $VeryDarkCyan;
+    text-align: center;
+    background-color: $LightGrayishCyan2;
+    min-width: 60px;
+    height: 45px;
     border-radius: 10px;
     border:none;
 }
-::placeholder{
-    color: $White;
+.Calc__tip--tip-input:active, .Calc__tip--tip-input:focus{
+    border:1px solid $StrongCyan;
+    outline: none;
 }
-.Calc__tip--left-column > button:active, .Calc__tip--right-column > button:active, .Calc__tip--tip-input:active {
+::placeholder{
+    color: $VeryDarkCyan;
+    opacity: 0.5;
+}
+.Calc__tip--left-column > button:active, .Calc__tip--right-column > button:active {
     background-color: $StrongCyan;
     outline: none;
 }
-.Calc__tip--left-column > button:focus, .Calc__tip--right-column > button:focus, .Calc__tip--tip-input:focus {
+.Calc__tip--left-column > button:focus, .Calc__tip--right-column > button:focus {
     background-color: $StrongCyan;
     outline: none;
 }
@@ -70,6 +79,8 @@ body {
     background-color: $LightGrayishCyan2;
     border: none;
     text-align: end;
+    color: $VeryDarkCyan;
+    width: calc(100% - 23px);
 }
 .input-dollar{
     display: flex;
@@ -111,6 +122,10 @@ body {
     div {
         margin-bottom: 15px;
     }
+    .reemplazar {
+        font-size: 35px;
+        color: $StrongCyan;
+    }
     p {
         font-size: 17px;
         color: $White;
@@ -121,16 +136,67 @@ body {
     }
     button {
         background-color: $StrongCyan;
+        opacity: 0.5;
         outline: none;
-        border-radius: 15px;
+        border-radius: 7px;
         border: none;
+        color: $VeryDarkCyan;
     }
     
+}
+
+.Calc__result--amount{
+    display: flex;
+    justify-content: space-between;
+}
+.Calc__result--total{
+    display: flex;
+    justify-content: space-between;
 }
 
 .attribution{
     font-size: 15px;
     a {
         font-size: 15px;
+    }
+}
+
+@media (min-width: 600px){
+    .Calc{
+        margin: 5px 35px;
+    }
+}
+
+@media (min-width: 830px) {
+    
+    .input{
+        width: calc(100% - 23px);
+    }
+    .Calc{
+        display: flex;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .Calc__card--left{
+        flex-direction: column;
+        width: 50%;
+        max-width: 1440px;
+        margin: 15px;
+    }
+    .Calc__card--right{
+        width: 50%;
+        height: 420px;
+        margin: 15px;
+
+    }
+    .Calc__result{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .Calc__result--amount{
+        margin-top: 40px;
+    }
+    .Calc__result--total{
+        margin-top: 30px;
     }
 }
