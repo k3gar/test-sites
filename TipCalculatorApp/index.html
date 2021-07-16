@@ -14,38 +14,48 @@
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
 		.attribution { font-size: 11px; text-align: center; }
-		.attribution a { color: hsl(228, 45%, 44%); }
+		.attribution a { color: hsl(228, 89%, 33%); }
 	</style>
 </head>
 <body>
-	<h1>SPLIT<br>TTER</h1>
+	<h1>SPLI<br>TTER</h1>
 	<main>
 		<form action="" class="Calc">
-			<section class="Calc__bill">
+			<section class="Calc__bill section">
 				<label for="bill">Bill</label>
-				<input id="bill" type="number">
-			</section>
-			<section class="Calc__tip">
-				<label for="">Select Tip %</label>
-				<div>
-					<button type="button">5%</button>
-					<button type="button">10%</button>
-					<button type="button">15%</button>
-					<button type="button">25%</button>
-					<button type="button">50%</button>
-					<input class="Calc__tip--tip-input" type="number" name="" id="" placeholder="Custom">
+				<div class="input-dollar">
+					<div class="input-dollar2"></div>
+					<input class="input input-bill" id="bill" type="number">
 				</div>
 			</section>
-			<section class="Calc__people">
-				<label for="people">Number of People</label>
-				<input id="people" type="number">
+			<section class="Calc__tip section">
+				<label for="">Select Tip %</label>
+				<div class="Calc__tip--column">
+					<div class="Calc__tip--left-column">
+						<button type="button">5%</button>
+						<button type="button">15%</button>
+						<button type="button">50%</button>
+					</div>
+					<div class="Calc__tip--right-column">
+						<button type="button">10%</button>
+						<button type="button">25%</button>
+						<input class="Calc__tip--tip-input" type="number" name="" id="" placeholder="Custom">
+					</div>
+				</div>
+			</section>
+			<section class="Calc__people section">
+				<label>Number of People</label>
+				<div class="input-people">
+					<div class="input-people2"></div>
+					<input class="input" id="people" type="number">
+				</div>
 			</section>
 			<section class="Calc__result">
 				<div class="Calc__result--amount">
-					<p>Tip Amount <br> 	/ person </p>
+					<p>Tip Amount <br><span>/ person</span></p>
 				</div>
 				<div class="Calc__result--total">
-					<p>Total<br> 	/ person </p>
+					<p>Total<br><span>/ person</span></p>
 				</div>
 				<button type="button">RESET</button>
 			</section>
