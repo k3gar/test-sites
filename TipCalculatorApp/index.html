@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	<link rel="stylesheet" href="./css/index.css">
-
+	<script src="./js/index.js"></script>
 	<title>Frontend Mentor | Tip calculator app</title>
 
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -33,14 +33,14 @@
 					<label for="">Select Tip %</label>
 					<div class="Calc__tip--column">
 						<div class="Calc__tip--left-column">
-							<button type="button">5%</button>
-							<button type="button">15%</button>
-							<button type="button">50%</button>
+							<button id="cinco" type="button" onclick="cincoPorciento()">5%</button>
+							<button id="quince" type="button">15%</button>
+							<button id="cincuenta" type="button">50%</button>
 						</div>
 						<div class="Calc__tip--right-column">
-							<button type="button">10%</button>
-							<button type="button">25%</button>
-							<input class="Calc__tip--tip-input" type="number" name="" id="" placeholder="Custom">
+							<button id="diez" type="button" onclick="diezPorciento()">10%</button>
+							<button id="veinticinco" type="button">25%</button>
+							<input class="Calc__tip--tip-input" type="number" name="" id="custom" placeholder="Custom">
 						</div>
 					</div>
 				</section>
@@ -57,14 +57,14 @@
 					<div class="Calc__result-info">
 						<div class="Calc__result--amount Calc__result-info-item">
 							<p>Tip Amount <br><span>/person</span></p>
-							<p class="reemplazar">$0.00</p>
+							<p id="tip" class="reemplazar">$0.00</p>
 						</div>
 						<div class="Calc__result--total  Calc__result-info-item">
 							<p>Total<br><span>/person</span></p>
-							<p class="reemplazar">$0.00</p>
+							<p id="total" class="reemplazar">$0.00</p>
 						</div>
 					</div>
-					<button type="button">RESET</button>
+					<button type="reset">RESET</button>
 				</section>
 			</section>
 
