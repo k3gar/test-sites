@@ -20,7 +20,7 @@
 <body>
 	<h1>SPLI<br>TTER</h1>
 	<main>
-		<form action="" class="Calc">
+		<form action="" class="Calc" onload="prueba()">
 			<section class="Calc__card--left">
 				<section class="Calc__bill section">
 					<label for="bill">Bill</label>
@@ -34,13 +34,13 @@
 					<div class="Calc__tip--column">
 						<div class="Calc__tip--left-column">
 							<button id="cinco" type="button" onclick="cincoPorciento()">5%</button>
-							<button id="quince" type="button">15%</button>
-							<button id="cincuenta" type="button">50%</button>
+							<button id="quince" type="button" onclick="quincePorciento()">15%</button>
+							<button id="cincuenta" type="button" onclick="fiftyPorciento()">50%</button>
 						</div>
 						<div class="Calc__tip--right-column">
 							<button id="diez" type="button" onclick="diezPorciento()">10%</button>
-							<button id="veinticinco" type="button">25%</button>
-							<input class="Calc__tip--tip-input" type="number" name="" id="custom" placeholder="Custom">
+							<button id="veinticinco" type="button" onclick="twenty_fivePorciento()">25%</button>
+							<input class="Calc__tip--tip-input" type="number" name="" id="custom" onclick="customPorciento()" placeholder="Custom">
 						</div>
 					</div>
 				</section>
@@ -64,7 +64,7 @@
 							<p id="total" class="reemplazar">$0.00</p>
 						</div>
 					</div>
-					<button type="reset">RESET</button>
+					<button id="reset" type="reset">RESET</button>
 				</section>
 			</section>
 
