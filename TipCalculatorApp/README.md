@@ -30,10 +30,15 @@ Process:
 - Mobile-first workflow
 
 ### What I learned
-🚀 How .toFixed() method works.
-🚀 parseFloat and parseInt.
-🚀 Logical Operators.
+🚀 How .toFixed() method works.  
+
+🚀 parseFloat and parseInt.  
+
+🚀 Logical Operators.  
+
 🚀 NaN and isNaN
+
+🚀 SASS
 
 ### Continued development
 I want to improve my DOM manipulation habilities and how to change styles with JavaScript.
