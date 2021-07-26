@@ -151,6 +151,12 @@ body label {
   height: 23px;
 }
 
+.error {
+  color: red;
+  font-size: 15px;
+  display: none;
+}
+
 .input-people {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<link rel="stylesheet" href="./css/index.css">
-
-	<title>Frontend Mentor | Tip calculator app</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link rel="stylesheet" href="./css/index.css">
+		<script src="./js/index.js"></script>
+		
+		<title>Frontend Mentor | Tip calculator app</title>
 
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
@@ -28,6 +29,7 @@
 						<div class="input-dollar2"></div>
 						<input class="input input-bill" id="bill" type="number" placeholder="0">
 					</div>
+					<p class="error">Please Input a Value</p>
 				</section>
 				<section class="Calc__tip section">
 					<label for="">Select Tip %</label>
@@ -50,6 +52,7 @@
 						<div class="input-people2"></div>
 						<input class="input" id="people" type="number"  placeholder="0">
 					</div>
+					<p class="error">Please Input a Value</p>
 				</section>
 			</section>
 			<section class="Calc__card--right">
@@ -64,7 +67,7 @@
 							<p id="total" class="reemplazar">$0.00</p>
 						</div>
 					</div>
-					<button id="reset" type="reset">RESET</button>
+					<button id="reset" type="reset" onclick="resetAll()">RESET</button>
 				</section>
 			</section>
 
@@ -75,6 +78,5 @@
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
 		Coded by <a href="https://github.com/k3gar/">Kevin Garcia</a>.
 	</div>
-	<script src="./js/index.js"></script>
 	</body>
 </html>
