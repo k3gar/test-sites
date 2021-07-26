@@ -30,9 +30,12 @@ Process:
 - Mobile-first workflow
 
 ### What I learned
-🚀 How .toFixed() method works.
-🚀 parseFloat and parseInt.
-🚀 Logical Operators.
+🚀 How .toFixed() method works.  
+
+🚀 parseFloat and parseInt.  
+
+🚀 Logical Operators.  
+
 🚀 NaN and isNaN
 
 ### Continued development
