@@ -1,8 +1,6 @@
 function cincoPorciento() {
     let bill = parseFloat(document.getElementById('bill').value || 0, 10);
     let people = parseInt(document.getElementById('people').value || 0, 10);
-    let error = document.getElementsByClassName('error')
-    let button = document.getElementById('reset')
     let fivePercent = (bill*5) / 100;
     let tipPerPerson = fivePercent/people || 0;
     let totalPerPerson = (bill+fivePercent) / people || 0;
