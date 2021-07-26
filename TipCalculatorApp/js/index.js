@@ -1,15 +1,17 @@
 function cincoPorciento() {
-    let bill = parseFloat(document.getElementById('bill').value, 10);
-    let people = parseInt(document.getElementById('people').value, 10);
+    let bill = parseFloat(document.getElementById('bill').value || 0, 10);
+    let people = parseInt(document.getElementById('people').value || 0, 10);
+    debugger
     let fivePercent = (bill*5) / 100;
-    let tipPerPerson = parseFloat(fivePercent/people).toFixed(2);
-    let totalPerPerson = parseFloat((bill+fivePercent) / people).toFixed(2);
+    let tipPerPerson = fivePercent/people || 0;
+    let totalPerPerson = (bill+fivePercent) / people || 0;
     console.log(`The tip per person is ${tipPerPerson}`);
     console.log(`The total per person is ${totalPerPerson}`);
     
-    tip.innerText = (`$${tipPerPerson}`)
-    total.innerText = (`$${totalPerPerson}`)
+    tip.innerText = (`$${tipPerPerson.toFixed(2)}`)
+    total.innerText = (`$${totalPerPerson.toFixed(2)}`)
 }
+
 function diezPorciento() {
     let bill = parseFloat(document.getElementById('bill').value, 10);
     let people = parseInt(document.getElementById('people').value, 10);
@@ -82,28 +84,4 @@ function customPorciento() {
     
     tip.innerText = (`$${tipPerPerson}`)
     total.innerText = (`$${totalPerPerson}`)
-}
-
-/* document.getElementById('bill').keyup(function() {
-    check();
-}); */
-
-function check() {
-    var opcion = document.getElementById('bill').value;
-    debugger
-
-    if (opcion.length == 0){
-        debugger
-        document.getElementById('reset').style.color = "#00494d"
-    }
-    else{
-        debugger
-        document.getElementById('reset').style.color = "#26c0ab"
-        
-    }
-
-}
-
-function prueba(){
-    alert("Hola")
 }
