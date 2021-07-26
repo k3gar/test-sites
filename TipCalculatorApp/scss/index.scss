@@ -1,4 +1,10 @@
 @import './components/_globals.scss';
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
 body {
     background-color: $LightGrayishCyan1;
     h1{
