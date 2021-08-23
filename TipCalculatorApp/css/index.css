@@ -146,6 +146,10 @@ body label {
   width: calc(100% - 23px);
 }
 
+.input:focus {
+  border: 1px solid #26c0ab;
+}
+
 .input-dollar {
   display: -webkit-box;
   display: -ms-flexbox;

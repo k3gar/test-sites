@@ -88,6 +88,10 @@ body {
     color: $VeryDarkCyan;
     width: calc(100% - 23px);
 }
+.input:focus{
+    border: 1px solid #26c0ab;
+}
+
 .input-dollar{
     display: flex;
     background-color: $LightGrayishCyan2;

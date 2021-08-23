@@ -1,0 +1,23 @@
+*{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+main > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    margin: 15px;
+    background-color: #47f3f3;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.item > div{
+    text-align: center;
+}
+/* .item > img {
+    width: 250px;
+    height: 250px;
+} */
