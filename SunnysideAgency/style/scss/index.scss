@@ -1,0 +1,107 @@
+@import './components/globals';
+
+.header{
+    background-image: url('../../images/mobile/image-header.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75vh;
+}
+.header__menu{
+    padding: 15px;
+}
+.header__title{
+    display: flex;
+    flex-direction: column;
+    color: $White;
+    font-weight: 900;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 50px;
+    text-transform:uppercase;
+    align-items: center;
+    padding-top: 60px;
+    h1 {
+        margin-bottom: 9px;
+    }
+}
+.header__title-arrow{
+    width: 30px;
+    height: 115px;
+    margin-top: 45px;
+}
+.header__title-egg{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.text__main-one{
+    text-align: center;
+    padding: 55px 0;
+    h2{
+        font-weight: 800;
+        font-size: 2rem;
+        color: $Very-dark-desaturated-blue;
+        margin-bottom: 15px
+    }
+    .text__main-one-text{
+        color: $Dark-grayish-blue;
+        font-family: $Barlow;
+        padding: 0 25px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .text__main-one-p{
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $Very-dark-desaturated-blue;
+        border-bottom: 3px solid $Yellow;
+        display: inline-block;
+        margin-top: 25px;
+    }
+}
+
+.text__main-two{
+    text-align: center;
+    .text__main-two-img{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    h2{
+        padding: 55px 0 0 0;
+        font-weight: 800;
+        font-size: 2rem;
+        color: $Very-dark-desaturated-blue;
+        margin-bottom: 15px
+    }
+    .text__main-two-text{
+        color: $Dark-grayish-blue;
+        font-family: $Barlow;
+        padding: 0 25px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .text__main-two-p{
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $Very-dark-desaturated-blue;
+        border-bottom: 3px solid $Yellow;
+        display: inline-block;
+        margin-top: 25px;
+        
+    }
+}
+
+.text__main-three{
+    background-image: url('../../images/mobile/image-graphic-design.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
