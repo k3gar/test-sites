@@ -1,17 +1,17 @@
-@import './components/globals';
+@import "./components/globals";
 
-.header{
-    background-image: url('../../images/mobile/image-header.jpg');
+.header {
+    background-image: url("../../images/mobile/image-header.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 75vh;
 }
-.header__menu{
+.header__menu {
     padding: 15px;
 }
-.header__title{
+.header__title {
     display: flex;
     flex-direction: column;
     color: $White;
@@ -19,7 +19,7 @@
     font-size: 1.7rem;
     text-align: center;
     line-height: 50px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     align-items: center;
     padding-top: 60px;
     h1 {
@@ -27,83 +27,86 @@
     }
 }
 
-.header__title-arrow{
+.header__title-arrow {
     width: 30px;
     height: 115px;
     margin-top: 45px;
 }
-.header__title-egg{
+.header__title-egg {
     width: 100%;
     height: 300px;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.text__main-one{
+.text__main-one {
     text-align: center;
     padding: 55px 0;
-    h2{
+    h2 {
         font-weight: 800;
         font-size: 2rem;
         color: $Very-dark-desaturated-blue;
-        margin-bottom: 15px
+        margin-bottom: 15px;
     }
-    .text__main-one-text{
+    .text__main-one-text {
         color: $Dark-grayish-blue;
         font-family: $Barlow;
         padding: 0 25px;
         font-size: 18px;
         line-height: 27px;
     }
-    .text__main-one-p{
+    .text__main-one-p {
         font-weight: 600;
         text-transform: uppercase;
         color: $Very-dark-desaturated-blue;
-        border-bottom: 3px solid $Yellow;
+        text-decoration-line: underline;
+        text-decoration-color: #fad400;
+        text-decoration-thickness: 4px;
         display: inline-block;
         margin-top: 25px;
     }
 }
 
-.text__main-two{
+.text__main-two {
     text-align: center;
-    .text__main-two-img{
+    .text__main-two-img {
         width: 100%;
         height: 300px;
         background-position: center;
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
     }
-    h2{
+    h2 {
         padding: 55px 0 0 0;
         font-weight: 800;
         font-size: 2rem;
         color: $Very-dark-desaturated-blue;
-        margin-bottom: 15px
+        margin-bottom: 15px;
     }
-    .text__main-two-text{
+    .text__main-two-text {
         color: $Dark-grayish-blue;
         font-family: $Barlow;
         padding: 0 25px;
         font-size: 18px;
         line-height: 27px;
     }
-    .text__main-two-p{
+    .text__main-two-p {
         font-weight: 600;
         text-transform: uppercase;
         color: $Very-dark-desaturated-blue;
-        border-bottom: 3px solid $Yellow;
+        text-decoration-line: underline;
+        text-decoration-color: $Soft-red;
+        text-decoration-thickness: 4px;
         display: inline-block;
         margin-top: 25px;
-        
     }
 }
 
-.text__main-three{
-    background-image: url('../../images/mobile/image-graphic-design.jpg');
+.text__main-three {
+    background-image: url("../../images/mobile/image-graphic-design.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 600px;
@@ -114,22 +117,22 @@
     justify-content: flex-end;
     color: $Dark-desaturated-cyan;
     padding-bottom: 60px;
-    h2{
+    h2 {
         font-weight: 900;
         margin-bottom: 25px;
         font-size: 27px;
     }
-    .text__main-three-text{
+    .text__main-three-text {
         font-family: $Barlow;
         padding: 0 20px;
         font-size: 16px;
         line-height: 23px;
     }
 }
-.text__main-four{
-    background-image: url('../../images/mobile/image-photography.jpg');
+.text__main-four {
+    background-image: url("../../images/mobile/image-photography.jpg");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 600px;
@@ -139,36 +142,36 @@
     justify-content: flex-end;
     color: $Dark-blue;
     padding-bottom: 60px;
-    h2{
+    h2 {
         font-weight: 900;
         margin-bottom: 25px;
         font-size: 27px;
     }
-    .text__main-four-text{
+    .text__main-four-text {
         font-family: $Barlow;
         padding: 0 20px;
         font-size: 16px;
         line-height: 23px;
     }
 }
-
-.text__main-tetimonial{
+.text__main-tetimonial-title {
+    text-transform: uppercase;
+    color: $Grayish-blue;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    margin: 55px 0 20px 0;
     text-align: center;
-    h3{
-        text-transform: uppercase;
-        color: $Grayish-blue;
-        font-weight: 900;
-        font-size: 18px;
-        letter-spacing: 2.5px;
-        margin: 55px 0 20px 0;
-    }
-    .text__main-tetimonial-pic{
+}
+.text__main-tetimonial {
+    text-align: center;
+    .text__main-tetimonial-pic {
         border-radius: 50%;
         width: 65px;
         height: 65px;
         margin: 50px 0 35px 0;
     }
-    .text__main-tetimonial-text{
+    .text__main-tetimonial-text {
         font-family: $Barlow;
         color: $Very-dark-grayish-blue;
         padding: 0 30px;
@@ -176,87 +179,126 @@
         font-weight: 600;
         font-size: 18px;
     }
-    .text__main-tetimonial-name{
+    .text__main-tetimonial-name {
         margin: 30px 0 10px 0;
         font-weight: 900;
         color: $Very-dark-desaturated-blue;
     }
-    .text__main-tetimonial-job{
+    .text__main-tetimonial-job {
         color: $Grayish-blue;
         font-family: $Barlow;
         font-size: 12.5px;
     }
 }
-.images-footer{
+.images-footer {
     display: flex;
     flex-wrap: wrap;
     margin: 35px 0 0 0;
-    img{
+    width: 100%;
+    height: 375px;
+    .images-footer-1 {
         width: 50%;
         height: 50%;
+        background-image: url("../../images/mobile/image-gallery-milkbottles.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .images-footer-2 {
+        width: 50%;
+        height: 50%;
+        background-image: url("../../images/mobile/image-gallery-orange.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .images-footer-3 {
+        width: 50%;
+        height: 50%;
+        background-image: url("../../images/mobile/image-gallery-cone.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .images-footer-4 {
+        width: 50%;
+        height: 50%;
+        background-image: url("../../images/mobile/image-gallery-sugar-cubes.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
-footer{
+footer {
     background-color: #91d3c5;
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
-    img{
+    img {
         margin: 40px auto;
         width: 124px;
-        height: 24px; 
+        height: 24px;
     }
-    section{
+    section {
         display: flex;
         flex-direction: column;
-        ul{
+        ul {
             display: flex;
             justify-content: space-evenly;
         }
-        li{
+        li {
             font-family: $Barlow;
             list-style: none;
             color: #25564b;
             opacity: 0.85;
+            a {
+                text-decoration: none;
+            }
+            a:-webkit-any-link {
+                color: #25564b;
+            }
+            a:hover {
+                color: $White;
+            }
         }
     }
-    .footer__media{
+    .footer__media {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin:90px 0 50px 0;
-        li{
+        margin: 90px 0 50px 0;
+        li {
             list-style: none;
         }
-        .socialMedia_facebook{
-            background-image: url('../../images/icon-facebook.svg');
+        .socialMedia_facebook {
+            background-image: url("../../images/icon-facebook.svg");
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 30px;
             height: 30px;
         }
-        .socialMedia_instagram{
-            background-image: url('../../images/icon-instagram.svg');
+        .socialMedia_instagram {
+            background-image: url("../../images/icon-instagram.svg");
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 30px;
             height: 30px;
         }
-        .socialMedia_twitter{
-            background-image: url('../../images/icon-twitter.svg');
+        .socialMedia_twitter {
+            background-image: url("../../images/icon-twitter.svg");
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 30px;
             height: 30px;
         }
-        .socialMedia_pinterest{
-            background-image: url('../../images/icon-pinterest.svg');
+        .socialMedia_pinterest {
+            background-image: url("../../images/icon-pinterest.svg");
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             width: 30px;
             height: 30px;
@@ -264,45 +306,98 @@ footer{
     }
 }
 
-@media (min-width:864px) {
-    .header{
-        background-image: url('../../images/desktop/image-header.jpg');
+@media (min-width: 864px) {
+    .header {
+        background-image: url("../../images/desktop/image-header.jpg");
         background-position: center;
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
     }
-    .text__main-first{
+    .text__main-first {
         display: flex;
     }
-    .text__main-one{
+    .text__main-one {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .header__title-egg{
+    .header__title-egg {
         width: 50%;
         height: 100%;
         order: 1;
     }
-    .text__main-two{
+    .text__main-two {
         display: flex;
-        .text__main-two-img{
+        .text__main-two-img {
             width: 50%;
             height: 100%;
         }
-        .text__main-two-cluster{
+        .text__main-two-cluster {
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
         }
     }
-    .text__main-three{
-        width: 50%;
-        
+    .text__main-three-four {
+        display: flex;
     }
-    .text__main-four{
+    .text__main-three {
+        width: 50%;
+        margin: 0;
+    }
+    .text__main-four {
         width: 50%;
     }
-
+    .text__main-tetimonial {
+        display: flex;
+        width: 100%;
+        h3 {
+            display: inline-block;
+        }
+    }
+    .images-footer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 35px 0 0 0;
+        height: 500px;
+        .images-footer-1 {
+            width: 25%;
+            height: auto;
+            background-image: url("../../images/desktop/image-gallery-milkbottles.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .images-footer-2 {
+            width: 25%;
+            height: auto;
+            background-image: url("../../images/desktop/image-gallery-orange.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .images-footer-3 {
+            width: 25%;
+            height: auto;
+            background-image: url("../../images/desktop/image-gallery-cone.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .images-footer-4 {
+            width: 25%;
+            height: auto;
+            background-image: url("../../images/desktop/image-gallery-sugarcubes.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    footer {
+        ul {
+            margin: 0 300px;
+        }
+    }
 }
