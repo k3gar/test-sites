@@ -9,7 +9,27 @@
     height: 75vh;
 }
 .header__menu {
-    padding: 15px;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .mobile-menu {
+        float: right;
+    }
+    .mobile-menu-items {
+        position: absolute;
+        top: 70px;
+        text-align: center;
+        left: 45%;
+        height: 150px;
+        background-color: $White;
+        color: $Dark-grayish-blue;
+        li {
+            font-family: $Barlow;
+            list-style: none;
+        }
+    }
 }
 .header__title {
     display: flex;
