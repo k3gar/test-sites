@@ -21,14 +21,35 @@
         position: absolute;
         top: 70px;
         text-align: center;
-        left: 45%;
-        height: 150px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 80%;
+        height: 250px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 7px 0;
         background-color: $White;
         color: $Dark-grayish-blue;
+        border-radius: 25px;
+        border-top-right-radius: 0;
+        align-items: center;
         li {
             font-family: $Barlow;
             list-style: none;
+            width: 150px;
+            padding: 10px;
         }
+        li:hover{
+            background-color: #fad400;
+            border-radius: 15px;
+            font-family: $Fraunces;
+            color: black;
+            transition: 0.82s;
+        }
+
+          
     }
 }
 .header__title {

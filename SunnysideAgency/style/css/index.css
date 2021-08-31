@@ -40,14 +40,41 @@
   position: absolute;
   top: 70px;
   text-align: center;
-  left: 45%;
-  height: 150px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 250px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 7px 0;
   background-color: white;
   color: #818498;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__menu .mobile-menu-items li {
   font-family: "Barlow";
   list-style: none;
+  width: 150px;
+  padding: 10px;
+}
+.header__menu .mobile-menu-items li:hover {
+  background-color: #fad400;
+  border-radius: 15px;
+  font-family: "Fraunces";
+  color: black;
+  -webkit-transition: 0.82s;
+  transition: 0.82s;
 }
 
 .header__title {
