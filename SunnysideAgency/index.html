@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
-  <script src="./js/index.js"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <link rel="stylesheet" href="./style/css/index.css">
 
@@ -23,11 +22,11 @@
     <section class="header__menu">
       <img src="./images/logo.svg" alt="Logo">
       <div>
-        <svg onclick="displayMenu()" class="mobile-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        <svg id="displayMenu" class="mobile-menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
   width="45" height="45"
   viewBox="0 0 226 226"
   style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#ffffff"><path d="M18.83333,47.08333v18.83333h188.33333v-18.83333zM18.83333,103.58333v18.83333h188.33333v-18.83333zM18.83333,160.08333v18.83333h188.33333v-18.83333z"></path></g></g></svg>
-  <ul id="menu" class="mobile-menu-items">
+  <ul id="menu" class="mobile-menu-items status_1">
     <li>About</li>
     <li>Services</li>
     <li>Projects</li>
@@ -140,5 +139,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/index.js" defer></script>
 </body>
 </html>

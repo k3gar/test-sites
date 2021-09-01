@@ -36,6 +36,12 @@
 .header__menu .mobile-menu {
   float: right;
 }
+.header__menu .status_1 {
+  visibility: hidden;
+}
+.header__menu .status_2 {
+  visibility: visible;
+}
 .header__menu .mobile-menu-items {
   position: absolute;
   top: 70px;
@@ -45,7 +51,9 @@
   margin: 0 auto;
   width: 80%;
   height: 250px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -436,6 +444,50 @@ footer .footer__media .socialMedia_pinterest {
     height: 100vh;
   }
 
+  .header__menu .status_1 {
+    position: initial;
+    visibility: visible;
+  }
+  .header__menu .mobile-menu-items {
+    position: static;
+    top: 70px;
+    text-align: center;
+    width: 80%;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 7px 0;
+    background-color: white;
+    color: #818498;
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__menu .mobile-menu-items li {
+    font-family: "Barlow";
+    list-style: none;
+    width: 150px;
+    padding: 10px;
+  }
+  .header__menu .mobile-menu-items li:hover {
+    background-color: #fad400;
+    border-radius: 15px;
+    font-family: "Fraunces";
+    color: black;
+    -webkit-transition: 0.82s;
+    transition: 0.82s;
+  }
+
+  #displayMenu {
+    display: none;
+  }
+
   .text__main-first {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -453,6 +505,7 @@ footer .footer__media .socialMedia_pinterest {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 50%;
   }
 
   .header__title-egg {
@@ -483,6 +536,7 @@ footer .footer__media .socialMedia_pinterest {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 50%;
   }
 
   .text__main-three-four {
