@@ -366,9 +366,13 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
     }
     .header__menu{
+        img{
+            width: 140px;
+            height: 30px;
+        }
         .status_1 {
             position:initial;
             visibility: visible;
@@ -377,7 +381,6 @@ footer {
             position: static;
             top: 70px;
             text-align: center;
-            
             width: 80%;
             height: auto;
             display: flex;
@@ -389,6 +392,7 @@ footer {
             border-top-right-radius: 0;
             align-items: center;
             a {
+                font-size: 1.1rem;
                 color: $White;
                 font-family: $Barlow;
                 list-style: none;
@@ -407,6 +411,17 @@ footer {
               
         }
 
+    }
+    .header__title{
+        padding-top: 85px;
+        h1{
+            font-size: 3.7rem;
+            margin-bottom: 9px;
+            letter-spacing: 7px;
+        }
+        h1 > br {
+            display: none;
+        }
     }
     
     #displayMenu{
