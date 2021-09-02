@@ -516,8 +516,16 @@ footer {
         }
     }
     footer {
+        img{
+            width: 140px;
+            height: 30px;
+        }
+        .footer__media{
+            margin: 90px 35% 50px 35%;
+        }
         ul {
             margin: 0 300px;
         }
     }
+    
 }

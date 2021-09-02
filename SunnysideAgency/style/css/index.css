@@ -639,6 +639,13 @@ footer .footer__media .socialMedia_pinterest {
     background-size: cover;
   }
 
+  footer img {
+    width: 140px;
+    height: 30px;
+  }
+  footer .footer__media {
+    margin: 90px 35% 50px 35%;
+  }
   footer ul {
     margin: 0 300px;
   }
