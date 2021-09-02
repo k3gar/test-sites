@@ -70,13 +70,18 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.header__menu .mobile-menu-items li {
+.header__menu .mobile-menu-items a {
+  text-decoration: none;
   font-family: "Barlow";
   list-style: none;
   width: 150px;
   padding: 10px;
+  color: #818498;
 }
-.header__menu .mobile-menu-items li:hover {
+.header__menu .mobile-menu-items li {
+  list-style: none;
+}
+.header__menu .mobile-menu-items a:hover {
   background-color: #fad400;
   border-radius: 15px;
   font-family: "Fraunces";
@@ -466,21 +471,22 @@ footer .footer__media .socialMedia_pinterest {
             justify-content: space-evenly;
     padding: 7px 0;
     background-color: transparent;
-    color: white;
     border-radius: 25px;
     border-top-right-radius: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .header__menu .mobile-menu-items li {
+  .header__menu .mobile-menu-items a {
+    color: white;
     font-family: "Barlow";
     list-style: none;
     width: 150px;
     padding: 10px;
+    margin-right: 10px;
   }
-  .header__menu .mobile-menu-items li:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+  .header__menu .mobile-menu-items a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     font-family: "Fraunces";
     color: white;
