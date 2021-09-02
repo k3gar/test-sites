@@ -465,9 +465,14 @@ footer {
     .text__main-four {
         width: 50%;
     }
+    .text__main-tetimonial-title{
+        margin: 170px 0 20px 0;
+        font-size: 1.5rem;
+    }
     .text__main-tetimonial {
         display: flex;
         width: 100%;
+        margin-bottom: 170px;
         h3 {
             display: inline-block;
         }
