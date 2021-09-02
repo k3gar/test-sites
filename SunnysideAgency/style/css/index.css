@@ -453,16 +453,20 @@ footer .footer__media .socialMedia_pinterest {
     top: 70px;
     text-align: center;
     width: 80%;
-    height: 250px;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     padding: 7px 0;
-    background-color: white;
-    color: #818498;
+    background-color: transparent;
+    color: white;
     border-radius: 25px;
     border-top-right-radius: 0;
     -webkit-box-align: center;
@@ -476,10 +480,10 @@ footer .footer__media .socialMedia_pinterest {
     padding: 10px;
   }
   .header__menu .mobile-menu-items li:hover {
-    background-color: #fad400;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
     font-family: "Fraunces";
-    color: black;
+    color: white;
     -webkit-transition: 0.82s;
     transition: 0.82s;
   }
