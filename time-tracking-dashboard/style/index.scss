@@ -1,0 +1,23 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    color: hsl(236, 100%, 87%);
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    display: flex;
+}
+
+.card-main{
+    background-color: hsl(235, 46%, 20%);
+}
+.card-main_user{
+    background-color: hsl(246, 80%, 60%);
+
+}
