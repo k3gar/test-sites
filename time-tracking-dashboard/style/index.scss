@@ -152,3 +152,53 @@ main{
 .ellipsis-icon{
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    body{
+        background-color: hsl(226, 43%, 10%);
+        display: block;
+        margin: 25px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+    }
+    .card-main{
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 25px;
+        height: 250px;
+    }
+    .card-main_user-info > h1{
+        font-weight: 300;
+        font-size: 1rem;
+        margin: 0;
+    }
+    /* Card Main User */
+    .card-main_user{
+        background-color: hsl(246, 80%, 60%);
+        border-radius: 25px;
+        height: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+    }
+    .card-main_user-pic{
+        width: 75px;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    
+    .card-main_user-info{
+        margin: 45px 0 0 0;
+    }
+    .card-main_user-info > h1{
+        font-weight: 300;
+        font-size: 2rem;
+        margin: 0;
+    }
+    .card-main_user-info > p{
+        margin: 0;
+    }
+}

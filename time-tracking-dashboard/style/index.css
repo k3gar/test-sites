@@ -191,4 +191,68 @@ main {
 .ellipsis-icon {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-color: #0f1424;
+    display: block;
+    margin: 25px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 10%;
+  }
+  .card-main {
+    background-color: #1c1f4a;
+    border-radius: 25px;
+    height: 250px;
+  }
+  .card-main_user-info > h1 {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0;
+  }
+  /* Card Main User */
+  .card-main_user {
+    background-color: #5847eb;
+    border-radius: 25px;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 24px;
+  }
+  .card-main_user-pic {
+    width: 75px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  .card-main_user-info {
+    margin: 45px 0 0 0;
+  }
+  .card-main_user-info > h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .card-main_user-info > p {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=index.css.map */
