@@ -5,15 +5,17 @@
 body {
     background-color: hsl(226, 43%, 10%);
     height: 100vh;
-    margin: 15% 0;
+    margin: 8vh 0;
     display: flex;
     justify-content: center;
+}
+main{
+    width: 80%;
 }
 
 .card-main {
     background-color: hsl(235, 46%, 20%);
     border-radius: 25px;
-    width: 370px;
     height: 240px;
 }
 .card-main > ul {
@@ -150,7 +152,22 @@ body {
     cursor: pointer;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 580px) {
+    .card-main_items-article > div {
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: hsl(226, 43%, 10%);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     main {
         display: grid;
         grid-template-columns: 270px repeat(3, 320px);
@@ -164,11 +181,23 @@ body {
         grid-row-start: 1;
         grid-row-end: 3;
         border-radius: 25px;
+        width: auto;
         height: 475px;
     }
     .card-main > ul {
         list-style: none;
         padding: 24px;
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 18px;
+    }
+    .card-main > ul > li{
+        margin: 5px 0;
+        cursor: pointer;
+    }
+    .card-main > ul > li:hover{
+        color: white;
     }
     .card-main_user {
         background-color: hsl(246, 80%, 60%);
@@ -202,6 +231,7 @@ body {
         position: relative;
         overflow-y: hidden;
         border-radius: 15px;
+        margin: 0;
     }
 
     .card-main_items-logo {
@@ -232,6 +262,10 @@ body {
     .card-main_items-article:hover {
         cursor: pointer;
         background-color: hsl(236, 42%, 33%);
+    }
+    .card-main_items-article > div:nth-child(2n) {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .card-main_items-hour {
