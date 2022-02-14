@@ -27,26 +27,26 @@
         </section>
       </article>
       <ul>
-        <li>Daily</li>
-        <li>Weekly</li>
-        <li>Monthly</li>
+        <li onclick="daily()">Daily</li>
+        <li onclick="weekly()">Weekly</li>
+        <li onclick="monthly()">Monthly</li>
       </ul>
     </section>
-
+    
     <section class="card-main_items"> 
       <div class="card-main_items-work"></div>
       <article class="card-main_items-article">
         <div>
-          <h3>Work</h3>
+          <h3 id="item-hour_tittle">Work</h3>
           <img src="./images/icon-ellipsis.svg" alt="ellipsis-icon" srcset="" class="ellipsis-icon">
         </div>
         <div>
-          <p class="card-main_items-hour">  5hrs <!-- daily --></p>
-          <p>Previous - 7hrs <!-- daily --></p>
+          <p id="item-hour" class="card-main_items-hour">  5hrs <!-- daily --></p>
+          <p >Previous - 7hrs <!-- daily --></p>
         </div>
       </article>
     </section>
-
+    
     <section class="card-main_items">
       <div class="card-main_items-play"></div>
       <article class="card-main_items-article">
@@ -60,7 +60,7 @@
         </div>
       </article>
     </section>
-
+    
     <section class="card-main_items">
       <div class="card-main_items-study"></div>
       <article class="card-main_items-article">
@@ -88,7 +88,7 @@
         </div>
       </article>
     </section>
-
+    
     <section class="card-main_items">
       <div class="card-main_items-social"></div>
       <article class="card-main_items-article">
@@ -102,7 +102,7 @@
         </div>
       </article>
     </section>
-
+    
     <section class="card-main_items">
       <div class="card-main_items-self-care"></div>
       <article class="card-main_items-article">
@@ -117,15 +117,16 @@
       </article>
     </section>
   </main>
-
-
   
-
-
   
-<!--   <div class="attribution">
+  
+  
+  
+  
+  <!--   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
+<script src="./main.js"></script>
 </html>
