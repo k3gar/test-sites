@@ -1,8 +1,3 @@
-fetch('./data.json')
-.then(response => response.json())
-.then(data => console.log(data))
-
-let hour = document.getElementById('item-hour')
 let prueba3 = []
 
 function PRUEBA2(){
