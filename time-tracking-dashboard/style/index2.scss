@@ -96,9 +96,9 @@ main{
 
 .card-main_items-hour {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
-    margin: 0;
+    margin: 0 5px 0 0;
 }
 
 .card-main_items-work {
@@ -233,6 +233,10 @@ main{
         overflow-y: hidden;
         border-radius: 15px;
         margin: 0;
+    }
+   h2 {
+        color: white;
+        font-size: 20px;
     }
 
     .card-main_items-logo {
