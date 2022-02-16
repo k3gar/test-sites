@@ -195,7 +195,7 @@ main {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   body {
     background-color: #0f1424;
     height: 100vh;
@@ -213,8 +213,8 @@ main {
   main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 270px (320px)[3];
-        grid-template-columns: 270px repeat(3, 320px);
+    -ms-grid-columns: 1fr (1fr)[3];
+        grid-template-columns: 1fr repeat(3, 1fr);
     row-gap: 20px;
     -webkit-column-gap: 20px;
             column-gap: 20px;

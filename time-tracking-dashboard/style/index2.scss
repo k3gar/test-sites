@@ -160,7 +160,7 @@ main{
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     body {
         background-color: hsl(226, 43%, 10%);
         height: 100vh;
@@ -171,7 +171,7 @@ main{
     }
     main {
         display: grid;
-        grid-template-columns: 270px repeat(3, 320px);
+        grid-template-columns: 1fr repeat(3, 1fr);
         row-gap: 20px;
         column-gap: 20px;
         margin: 0 10%;

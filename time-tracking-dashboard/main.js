@@ -76,15 +76,8 @@ function color(){
     }
 }
 
-function daily(){
-    getData('daily')
-    addEventListener('click', color)
-}
-function weekly(){
-    getData('weekly')
-    addEventListener('click', color)
-}
-function monthly(){
-    getData('monthly')
+function chooseDay(){
+    let elementId = event.target.id;
+    getData(elementId)
     addEventListener('click', color)
 }
